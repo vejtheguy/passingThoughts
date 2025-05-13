@@ -75,7 +75,7 @@
                                 class="d-flex flex-column flex-md-row justify-content-between gap-2 mx-2 px-5 fs-4 text-body-secondary py-2">
                                 <span>Created <%= format(new Date(post.dateCreated)) %>
                                 </span>
-                                <span>by <%= post.author %></span>
+                                <span class="text-truncate w-100 w-md-50">by <%= post.author %></span>
                             </div>
                             <div class="btn-group">
                                 <button type="button" class="btn btn-outline-primary border-0 py-3"
@@ -95,22 +95,22 @@
                             <div
                                 class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-fullscreen-lg-down modal-xl">
                                 <div
-                                    class="bg-body-tertiary modal-content position-relative p-4 d-flex flex-column gap-4">
+                                    class="bg-body-tertiary modal-content position-relative p-4 d-flex flex-column gap-4 text-break">
                                     <button type="button"
                                         class="btn btn-outline-primary focus-ring bg-transparent position-absolute top-0 end-0 mt-2 me-2 rounded-circle border-0 txt-shd"
                                         data-bs-dismiss="modal" aria-label="Close"><i
                                             class="bi bi-x-lg fs-4"></i></button>
-                                    <h3 class="display-4 text-start px-2 px-md-5 mb-0 border-bottom w-100 pb-2">
+                                    <h3 class="display-4 px-2 px-md-5 mb-0 border-bottom w-100 pb-3 pt-md-0 pt-4">
                                         <%= post.title %>
                                     </h3>
-                                    <p class="flex-grow-1 view-content text-body mx-2 mx-md-5 mb-0 fs-3 text-start">
+                                    <p class="flex-grow-1 view-content text-body mx-2 mx-md-5 mb-0 fs-3">
                                         <%- post.content.replace(/\n/g, '<br>' ) %>
                                     </p>
                                     <div
                                         class="d-flex flex-column flex-md-row justify-content-between gap-2 border-top px-2 px-md-5 pt-4 fs-4 text-body-secondary">
                                         <span>Created <%= format(new Date(post.dateCreated)) %>
                                         </span>
-                                        <span>by <%= post.author %></span>
+                                        <span class="w-100 w-md-50">by <%= post.author %></span>
                                     </div>
                                 </div>
                             </div>
@@ -157,7 +157,8 @@
                         <div class="modal fade" id="deletePost<%= index %>" tabindex="-1"
                             aria-labelledby="deletePost<%= index %>" style="display: none;" aria-hidden="true">
                             <div class="modal-dialog modal-dialog-centered">
-                                <div class="bg-body-tertiary modal-content position-relative pt-5 overflow-hidden">
+                                <div
+                                    class="bg-body-tertiary modal-content position-relative pt-5 overflow-hidden text-break">
                                     <button type="button"
                                         class="btn btn-outline-primary focus-ring bg-transparent position-absolute top-0 end-0 mt-2 me-2 rounded-circle border-0 txt-shd"
                                         data-bs-dismiss="modal" aria-label="Close"><i
