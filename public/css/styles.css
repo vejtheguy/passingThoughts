@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Nanum+Pen+Script&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Nanum Pen Script", cursive;
+  letter-spacing: 0.1rem;
+}
+
+:root {
+  --bs-primary: rgb(163, 90, 227);
+  --bs-secondary: rgb(240, 239, 255);
+  --bs-shadow: rgb(24, 24, 24);
+  --bs-focus-ring-color: rgba(163, 90, 227, 0.35);
+}
+
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+
+.btn-outline-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: var(--bs-primary);
+  --bs-btn-bg: transparent;
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: var(--bs-secondary);
+  --bs-btn-hover-bg: var(--bs-primary);
+  --bs-btn-hover-border-color: var(--bs-primary);
+  --bs-btn-focus-shadow-rgb: var(--bs-primary);
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: var(--bs-primary);
+  --bs-btn-active-border-color: var(--bs-primary);
+  transition: all 0.4s ease;
+}
+
+.hero-h1 {
+  letter-spacing: 0.7rem;
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: bold;
+  text-shadow: 4px 4px 2px var(--bs-shadow);
+  color: var(--bs-primary);
+}
+
+.card {
+  height: 400px;
+  max-height: 400px;
+  box-shadow: 5px 5px 5px var(--bs-shadow);
+  border-color: transparent;
+}
+
+.post-content {
+  height: 25%;
+  overflow-y: scroll;
+}
+
+.view-content {
+  min-height: 15rem;
+  overflow-y: scroll;
+}
+
+.txt-shd {
+  text-shadow: 2px 2px 2px var(--bs-shadow);
+}
+
+.btn {
+  border-radius: 0;
+  text-shadow: 2px 2px 2px var(--bs-shadow);
+}
+
+.bx-shd {
+  box-shadow: 5px 5px 5px var(--bs-shadow);
+}
+
+.fade-in {
+  opacity: 0.2;
+  animation: fadeIn 0.4s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
