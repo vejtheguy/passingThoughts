@@ -75,7 +75,7 @@
                                 class="d-flex flex-column flex-md-row justify-content-between gap-2 mx-2 px-5 fs-4 text-body-secondary py-2">
                                 <span>Created <%= format(new Date(post.dateCreated)) %>
                                 </span>
-                                <span class="text-truncate w-100 w-md-50">by <%= post.author %></span>
+                                <span class="text-truncate w-100 w-md-50 text-md-end">by <%= post.author %></span>
                             </div>
                             <div class="btn-group">
                                 <button type="button" class="btn btn-outline-primary border-0 py-3"
@@ -110,7 +110,7 @@
                                         class="d-flex flex-column flex-md-row justify-content-between gap-2 border-top px-2 px-md-5 pt-4 fs-4 text-body-secondary">
                                         <span>Created <%= format(new Date(post.dateCreated)) %>
                                         </span>
-                                        <span class="w-100 w-md-50">by <%= post.author %></span>
+                                        <span class="w-100 w-md-50 text-md-end">by <%= post.author %></span>
                                     </div>
                                 </div>
                             </div>
